@@ -90,12 +90,11 @@ public class DropdownObjects {
 		Random random = new Random();
 		int randomCity = random.nextInt(maxCities);
 	     citiesElements.get(randomCity).click();
-	//	driver.findElement(getAllSelected).click();
-	//	result =  driver.findElement(getSelectedValue).getText();
-	///	AssertJUnit.assertEquals( "Options selected are : " + cityValue , result );
-
-	//	test.pass("test completed and passed");
-	//	report.flush();
+		driver.findElement(getAllSelected).click();
+		result =  driver.findElement(getSelectedValue).getText();
+	
+		test.pass("test completed and passed");
+		report.flush();
 
 
 	}

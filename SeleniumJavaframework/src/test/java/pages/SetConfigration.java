@@ -1,5 +1,7 @@
 package pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import config.PropertiesFile;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +17,7 @@ public class SetConfigration {
 		SetConfigration.driver = driver;
 	}
 	
-	public  WebDriver setBrowserConfig() {
+	public  WebDriver setBrowserConfig() throws InterruptedException {
 		
 	 PropertiesFile.readPropertiesFile();
 
@@ -27,7 +29,18 @@ public class SetConfigration {
 	    
 	}
 
-	driver.get("https://www.seleniumeasy.com/test/");
+	  driver.get("https://www.seleniumeasy.com/test/");
+	  
+	  Thread.sleep(1000);
+	  WebElement advPopup = driver.findElement(By.id("at-cv-lightbox-close"));
+	  
+	  if (advPopup.isDisplayed()) {
+		  
+		  Thread.sleep(1000);
+		  advPopup.click();
+	  }
+	  
+	
 
 	   return driver;
 	

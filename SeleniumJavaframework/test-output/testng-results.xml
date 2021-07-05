@@ -2,29 +2,40 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-20T00:33:54 AST" name="Default suite" finished-at="2021-06-20T00:34:29 AST" duration-ms="35081">
+  <suite started-at="2021-07-06T00:13:52 AST" name="Default suite" finished-at="2021-07-06T00:14:02 AST" duration-ms="9724">
     <groups>
     </groups>
-    <test started-at="2021-06-20T00:33:54 AST" name="Default test" finished-at="2021-06-20T00:34:29 AST" duration-ms="35081">
-      <class name="test.BootstrapDatePickers">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.BootstrapDatePickers@2657d4dd]" started-at="2021-06-20T00:33:54 AST" name="beforeTest" finished-at="2021-06-20T00:34:28 AST" duration-ms="34129" status="PASS">
+    <test started-at="2021-07-06T00:13:52 AST" name="Default test" finished-at="2021-07-06T00:14:02 AST" duration-ms="9724">
+      <class name="test.DropdownList">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.DropdownList@2657d4dd]" started-at="2021-07-06T00:13:52 AST" name="beforeTest" finished-at="2021-07-06T00:14:01 AST" duration-ms="8398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="DropdownTC()[pri:0, instance:test.BootstrapDatePickers@2657d4dd]" started-at="2021-06-20T00:34:28 AST" name="DropdownTC" finished-at="2021-06-20T00:34:29 AST" duration-ms="930" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method signature="DropdownTC()[pri:0, instance:test.DropdownList@2657d4dd]" started-at="2021-07-06T00:14:01 AST" name="DropdownTC" finished-at="2021-07-06T00:14:02 AST" duration-ms="1303" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Index 6 out of bounds for length 0]]>
+              <![CDATA[expected:<Options selected are : California
+Florida
+New Jersey
+New York
+Ohio
+Texas
+Pennsylvania
+Washington> but was:<Options selected are : Texas>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-at java.base/java.util.Objects.checkIndex(Objects.java:359)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at pages.BootstrapDatePickersObjects.testDAtePicker(BootstrapDatePickersObjects.java:145)
-at test.BootstrapDatePickers.DropdownTC(BootstrapDatePickers.java:30)
+              <![CDATA[java.lang.AssertionError: expected:<Options selected are : California
+Florida
+New Jersey
+New York
+Ohio
+Texas
+Pennsylvania
+Washington> but was:<Options selected are : Texas>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at pages.DropdownObjects.MultiSelectListDemo(DropdownObjects.java:96)
+at test.DropdownList.DropdownTC(DropdownList.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +66,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropdownTC -->
-      </class> <!-- test.BootstrapDatePickers -->
+      </class> <!-- test.DropdownList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

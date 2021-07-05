@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 20 00:33:54 AST 2021</td>
+<td>Started on:</td><td>Tue Jul 06 00:13:52 AST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35081 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9724 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.BootstrapDatePickers.DropdownTC()'><b>DropdownTC</b><br>Test class: test.BootstrapDatePickers</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at pages.BootstrapDatePickersObjects.testDAtePicker(BootstrapDatePickersObjects.java:145)
-	at test.BootstrapDatePickers.DropdownTC(BootstrapDatePickers.java:30)
+<td title='test.DropdownList.DropdownTC()'><b>DropdownTC</b><br>Test class: test.DropdownList</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;Options selected are : California
+Florida
+New Jersey
+New York
+Ohio
+Texas
+Pennsylvania
+Washington&gt; but was:&lt;Options selected are : Texas&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at pages.DropdownObjects.MultiSelectListDemo(DropdownObjects.java:96)
+	at test.DropdownList.DropdownTC(DropdownList.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +116,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace827099978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace827099978'><pre>java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:359)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at pages.BootstrapDatePickersObjects.testDAtePicker(BootstrapDatePickersObjects.java:145)
-	at test.BootstrapDatePickers.DropdownTC(BootstrapDatePickers.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1014565006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014565006'><pre>java.lang.AssertionError: expected:&lt;Options selected are : California
+Florida
+New Jersey
+New York
+Ohio
+Texas
+Pennsylvania
+Washington&gt; but was:&lt;Options selected are : Texas&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at pages.DropdownObjects.MultiSelectListDemo(DropdownObjects.java:96)
+	at test.DropdownList.DropdownTC(DropdownList.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,8 +158,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>test.BootstrapDatePickers@2657d4dd</td></tr>
+<td>1</td>
+<td>test.DropdownList@2657d4dd</td></tr>
 </table><p>
 </body>
 </html>

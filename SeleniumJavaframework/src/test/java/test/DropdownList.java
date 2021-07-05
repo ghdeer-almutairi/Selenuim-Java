@@ -15,7 +15,7 @@ public class DropdownList {
 	
 
 @BeforeTest
-public void beforeTest() {
+public void beforeTest() throws InterruptedException {
 SetConfigration config = new SetConfigration(driver);
 driver = config.setBrowserConfig();
 }

@@ -15,7 +15,7 @@ public class RadioButtonsTestCases {
 	
 
 @BeforeTest
-public void beforeTest() {
+public void beforeTest() throws InterruptedException {
 SetConfigration config = new SetConfigration(driver);
 driver = config.setBrowserConfig();
 }
@@ -34,15 +34,6 @@ public void radioButtonsTest() throws Exception {
 
 }
 
-/*
-@AfterTest
-public  void runTest() {
-	
-
-	
-	
-}
-*/
 
 
 }
